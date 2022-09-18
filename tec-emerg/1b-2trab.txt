@@ -1,0 +1,40 @@
+Esse questionário é referente ao conteúdo de Docker que vimos em sala de aula. Responder às
+questões abaixo e enviar no sistema AVA.
+
+1. Cite quais problemas as máquinas virtuais tem, além dos problemas que as máquinas físicas
+tem.
+R: 
+
+máquinas virtuais:
+* Grande uso de espaço em disco, já que é preciso de todos os arquivos para cada sistema operacional instalado em cada máquina virtual.
+* Dificuldade no acesso direto a hardware, como por exemplo placas específicas ou dispositivos USB
+* Grande consumo de memória RAM dado que cada máquina virtual vai ocupar uma área separada da mesma
+* Segurança: As máquinas virtuais podem ser menos seguras que as máquinas físicas justamente por causa do seu host. Este ponto é interessante, pois se o sistema operacional hospedeiro tiver alguma vulnerabilidade, todas as máquinas virtuais que estão hospedadas nessa máquina física estão vulneráveis.
+* Gerenciamento: Os ambientes virtuais necessitam ser instanciados, monitorados, configurados e salvos. Existem produtos que fornecem essas soluções, mas esse é o campo no qual estão os maiores investimentos na área de virtualização, justamente por se tratar de um dos maiores contra-tempos na implementação da virtualização.
+
+máquinas físicas:
+* Manutenção de servidores e refrigeração
+* Segurança fisica de acesso as maquinas
+* Dificil escalabilidade tanto vertical quanto Horizontal
+
+2. Qual comando digitamos para listar todos os containers?
+
+docker image list
+
+3. Qual comando digitamos para acessar um container via terminal?
+
+docker exec -it NOME_CONTAINER bash
+
+
+4. Qual comando digitamos para remover todos os containers?
+
+docker rmi $(docker images -q)
+
+5. Qual comando digitamos para remover um container específico?
+
+docker rmi <id-da-imagem>
+
+6. Por padrão, ao criar um container a nossa rede fica como bridge, qual desvantagem temos em
+deixar a rede padrão do docker?
+
+ele fica acessível apenas de dentro do host
