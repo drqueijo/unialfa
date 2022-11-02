@@ -1,0 +1,20 @@
+1. As camadas são empilhadas umas sobre as outras para formar uma base para o sistema de arquivos raiz de um contêiner. O driver de armazenamento do Docker é responsável por empilhar essas camadas e fornecer uma única visualização unificada.
+https://www.javatpoint.com/os-file-system-structure
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/12_FileSystemImplementation.html
+
+2. Mecanismo para persistir dados gerados e usados ​​por contêineres do Docker. Embora a bind mount seja dependente da estrutura de diretórios e do sistema operacional da máquina host, os volumes são totalmente gerenciados pelo Docker.
+Os volumes podem ser compartilhados com mais segurança entre vários contêineres.
+Os drivers de volume permitem armazenar volumes em hosts remotos ou provedores de nuvem, para criptografar o conteúdo de volumes ou adicionar outras funcionalidades.
+Novos volumes podem ter seu conteúdo pré-preenchido por um contêiner.
+
+3. 
+FROM mysql:latest
+LABEL maintainer="Matheus"
+COPY . /etc/sinc
+WORKDIR /etc/sinc/plen
+RUN chmod 755 /etc/sinc
+EXPOSE 1711
+
+
+
+

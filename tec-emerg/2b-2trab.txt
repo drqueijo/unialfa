@@ -1,0 +1,10 @@
+1. Possibilitam o agrupamento de classes, interfaces, funções e constantes, visando evitar o conflito entre seus nomes, atuando como um encapsulador para estes itens, seu funcionamento é equivalente ao de diretórios em sistemas operacionais, onde dois arquivos de mesmo nome não podem existir.
+
+2. Classe é a planta, é o planejamento, é o modelo a ser seguido para que a casa seja construída dentro de certas características. É algo abstrato, é algo lógico. Lá está definido todos os elementos que a casa terá e as características básicas de como eles serão compostas. Ela só existe no código.
+O objeto é a casa. É algo concreto, algo físico. Nele os elementos estão de fato presentes ali. É algo palpável (em termos de computador), é algo que pode ser manipulado. Ele existe na memória, durante a execução da aplicação.
+
+3. O operador new reserva (aloca) a memória para o objeto conforme a estrutura de sua classe e retorna uma referência para essa área que foi alocada. O código que vem após o operador new é o que chamamos de construtor da classe e tem o mesmo nome da classe seguido de ( ) (abre e fecha parênteses); dentro deles podem vir parâmetros, dependendo da classe a ser utilizada e de sua definição.
+
+4.  public function transferirIntegrantes(string $integrante, FormacaoBanda $bandaAReceberIntegrante): void {
+…
+}
