@@ -1,0 +1,5 @@
+1. $this aponta para um objeto na memória, no caso, o objeto em execução, ou melhor, o objeto onde a mesma está contida, ou então, vamos dizer que a mesma aponta para si própria
+
+2. Cada classe é responsável por controlar seus atributos, portanto ela deve julgar se aquele novo valor é válido ou não. Essa validação não deve ser controlada por quem está usando a classe, e sim por ela mesma, centralizando essa responsabilidade
+
+3. pdf classe UML
