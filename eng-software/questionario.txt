@@ -1,5 +1,0 @@
-1 - UML é a base para construir sistemas complexos e entender os relacionamentos e responsabilidades que existem em um ambiente com "n" entidades que podem ser representadas em um ambiente de computação. Além disso, é uma linguagem que é usada em todo o mundo. Na modelagem de sistemas, conhecer a UML é essencial, você pode entender de forma mais confiável o que será implementado.
-
-2- A UML é uma linguagem rica e ampla que pode ser usada para modelar não apenas a engenharia de software orientada a objetos, mas também a estrutura e o comportamento de aplicativos e processos de negócios. Os desenvolvedores de software concordam que não podemos eliminar a documentação de arquitetura. Isso é importante. 23 de dezembro. A partir de 2021
-
-3 - Várias empresas, olha atraves desse site para obter mais detalhes sobre todas as vagas de empregos que são pedidos com experiencia em UML - https://www.catho.com.br/vagas/analista-de-sistemas-uml/
