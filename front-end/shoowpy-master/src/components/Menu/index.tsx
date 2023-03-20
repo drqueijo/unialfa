@@ -10,7 +10,7 @@ import {
     OpenLinkButton,
     RightContainer
 } from './styles'
-
+import { ShoppingCartOutlined } from '@ant-design/icons';
 // https://github.com/profchines
 
 interface interfData {
@@ -25,7 +25,7 @@ export const Menu = () => {
     useEffect(() => {
 
         axios.get('http://localhost:3001/categorias')
-            .then((response) => {
+            .then((response: any) => {
                 setMenu(response.data)
             })
             .catch((erro) => {
@@ -74,7 +74,7 @@ export const Menu = () => {
                 </LeftContainer>
                 <RightContainer>
                     <NavbarLinkExtend to='/' >
-                        Carrinho
+                        <ShoppingCartOutlined style={{fontSize: 40}}/>
                     </NavbarLinkExtend>
                 </RightContainer>
             </NavInnerContainer>
