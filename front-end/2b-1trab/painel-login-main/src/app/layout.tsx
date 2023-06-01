@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './../styles/global.css'
 import Script from 'next/script'
+import Header from '@/components/Header'
+import Sidebar from '@/components/Sidebar'
 
 export const metadata = {
   title: 'Painel Shoowpy',
@@ -15,6 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Header />
+        <Sidebar />
         {children}
         <Script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
