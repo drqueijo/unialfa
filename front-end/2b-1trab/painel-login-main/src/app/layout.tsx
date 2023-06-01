@@ -4,6 +4,7 @@ import './../styles/global.css'
 import Script from 'next/script'
 import Header from '@/components/Header'
 import Sidebar from '@/components/Sidebar'
+import { usePathname } from 'next/navigation'
 export const metadata = {
   title: 'Painel Shoowpy',
   description: 'Criado por amantes do bootstrap',
@@ -14,12 +15,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-
+  const pathname = usePathname()
   return (
     <html lang="en">
       <body>
         <Header />
-        {window.location.pathname !== '/login' && (
+        {pathname !== '/login' && (
           <Sidebar />
         )}
 
